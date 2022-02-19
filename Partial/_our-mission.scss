@@ -1,0 +1,46 @@
+.our-mission {
+  margin-bottom: 5rem;
+  height: 70vh;
+}
+.our-mission-container {
+  background-color: black;
+  max-width: 80vw;
+  border-radius: 3rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 13rem;
+}
+.our-mission-glass {
+  height: 30rem;
+  width: 25rem;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 2rem 5rem 2rem 5rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 20rem;
+  }
+}
+.our-mission-text-content {
+  width: 50rem;
+  color: white;
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 2.4rem;
+  }
+  p {
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+}
+.highlited-text {
+  color: $blue-accent;
+}

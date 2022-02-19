@@ -1,0 +1,36 @@
+.who-we-are-sec {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 8rem;
+  position: relative;
+  margin-bottom: 15rem;
+}
+.aboutus-img-container {
+  position: relative;
+}
+.about-us-img {
+  width: 35rem;
+  object-fit: contain;
+  margin-right: 20rem;
+}
+.aboutus-text-content {
+  margin-top: 7rem;
+}
+.glass-aboutus {
+  min-height: 20rem;
+  min-width: 15rem;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 6rem 2rem 2rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  bottom: 3rem;
+  left: 23rem;
+}
+.blur-div-aboutus {
+  left: 10rem;
+  fill: blur(3rem);
+}

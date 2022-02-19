@@ -1,0 +1,71 @@
+.header {
+  padding-inline: 20rem;
+  height: 100vh;
+}
+.hero-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-left-container {
+  flex: 0.8;
+  margin-top: -6rem;
+}
+.hero-right-container {
+  flex: 1;
+  text-align: right;
+  position: relative;
+}
+.hero-title {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.hero-subtitle {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.hero-img {
+  height: 40rem;
+  border-radius: 7rem 2rem 2rem 2rem;
+}
+.button {
+  background-color: $blue-accent;
+  border: none;
+  padding: 1.2rem 3rem;
+  border-radius: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s transform linear;
+}
+.button:hover {
+  transform: scale(1.04);
+}
+.blur-background {
+  background-color: $blue-accent;
+  width: 40rem;
+  height: 40rem;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  top: -10rem;
+  right: -4rem;
+  filter: blur(50rem);
+}
+
+.glass-hero {
+  min-height: 20rem;
+  min-width: 15rem;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 6rem 2rem 2rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: absolute;
+  z-index: 2;
+  right: 20rem;
+  bottom: -1.5rem;
+}
