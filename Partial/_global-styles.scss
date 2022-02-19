@@ -30,22 +30,22 @@ section {
 
 // scroll bar
 
-// /* Track */
-// ::-webkit-scrollbar {
-//   width: 1.1rem;
-// }
+/* Track */
+::-webkit-scrollbar {
+  width: 1.1rem;
+}
 
-// ::-webkit-scrollbar-track {
-//   box-shadow: inset 0 0 0.2rem grey;
-// }
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.2rem grey;
+}
 
-// /* Handle */
-// ::-webkit-scrollbar-thumb {
-//   background: rgb(175, 175, 175);
-//   border-radius: 1rem;
-// }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(175, 175, 175);
+  border-radius: 1rem;
+}
 
-// /* Handle on hover */
-// ::-webkit-scrollbar-thumb:hover {
-//   background: rgb(129, 129, 129);
-// }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(129, 129, 129);
+}
