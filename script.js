@@ -12,7 +12,8 @@ faqIndi.forEach((faq) => {
   });
 });
 
-let isMobile = window.matchMedia("(max-width: 550px)");
+let isMobile = window.matchMedia("(max-width: 550px)").matches;
+console.log(isMobile);
 
 //GSAP Animations
 if (!isMobile) {
