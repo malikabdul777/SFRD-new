@@ -61,10 +61,24 @@
     }
   }
 }
+@media (min-width: 1000px) {
+  .mob-nav-icon-container {
+    display: none !important;
+  }
+  .nav-mobile {
+    display: none !important;
+  }
+}
 @media (max-width: 1000px) {
   //footer
   .list-container:nth-child(2) {
     display: none;
+  }
+  .nav-desk {
+    display: none;
+  }
+  .mob-nav-icon-container {
+    display: flex !important;
   }
 }
 @media (max-width: 850px) {

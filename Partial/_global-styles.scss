@@ -2,7 +2,7 @@
 
 $blue-accent: #04a9f8;
 $dim-text: #7a7a7a;
-
+$green-accent: #03b362;
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +15,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 section {
   padding-inline: 20rem;
@@ -48,4 +49,13 @@ section {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(129, 129, 129);
+}
+
+/* List styles */
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
 }

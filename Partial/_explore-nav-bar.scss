@@ -62,9 +62,11 @@
   text-align: center;
 }
 .video-container {
-  width: 70vw;
-  height: 50rem;
+  // width: 70vw;
   background-color: black;
   margin-bottom: 10rem;
-  border-radius: 3rem;
+}
+.container {
+  margin: 50px auto;
+  max-width: 500px;
 }

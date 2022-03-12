@@ -2,6 +2,8 @@ const faqHeading = document.querySelector(".faq-title");
 const faqIndi = document.querySelectorAll(".faq-indi");
 const faqDesc = document.querySelector(".faq-desc");
 const faqExpandBtn = document.querySelectorAll(".faq-expand-btn");
+const burgerMenu = document.querySelector("#burger-menu");
+const mobSidebar = document.querySelector("#sidebar-mob");
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,6 +16,19 @@ faqIndi.forEach((faq) => {
 
 let isMobile = window.matchMedia("(max-width: 550px)").matches;
 console.log(isMobile);
+
+// Change the second argument to your options:
+// https://github.com/sampotts/plyr/#options
+const player = new Plyr("video", { captions: { active: true } });
+
+// Expose player so it can be used from the console
+window.player = player;
+
+//Burger Menu
+burgerMenu.addEventListener("click", () => {
+  burgerMenu.classList.toggle("active");
+  mobSidebar.classList.toggle("active-sidebar");
+});
 
 //GSAP Animations
 if (!isMobile) {

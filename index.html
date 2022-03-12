@@ -5,36 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SFRD</title>
+    <link rel="stylesheet" href="https://unpkg.com/plyr@3/dist/plyr.css" />
     <link rel="stylesheet" href="./dist/css/style.css" />
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
-    ></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"
-    ></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script defer src="https://unpkg.com/plyr@3"></script>
     <script defer src="./script.js"></script>
   </head>
   <body>
     <div class="body-wrapper">
       <header class="header">
+        <div class="mob-nav-icon-container">
+          <img class="logo-mob" src="./Assets/images/logo.png" alt="" />
+          <div class="burger" id="burger-menu">
+            <div class="strip burger-strip-5">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-mobile" id="sidebar-mob">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Get Involved</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="# ">About Us</a></li>
+            <li><a class="button-contact-us" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <nav class="nav-desk">
+          <ul>
+            <div class="nav-links-container">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Get Involved</a></li>
+            </div>
+            <li><img class="logo-desk" src="./Assets/images/logo.png" alt="SFRD logo" /></li>
+            <div class="nav-links-container">
+              <li><a href="#">FAQ's</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a class="button-contact-us" href="#">Contact Us</a></li>
+            </div>
+          </ul>
+        </nav>
         <div class="hero-container">
           <div class="hero-left-container">
             <h2 class="hero-title">Creating Awareness about Rare Diseases</h2>
-            <p class="hero-subtitle">
-              Support a marvellous Cause, be a part of the change.
-            </p>
+            <p class="hero-subtitle">Support a marvellous Cause, be a part of the change.</p>
             <button class="button">Get Involved</button>
           </div>
           <div class="hero-right-container">
             <div class="blur-background"></div>
             <div class="glass-hero"></div>
-            <img
-              src="./Assets//images/nathan-dumlao-bw 1.jpg"
-              alt="happy smiling children"
-              class="hero-img"
-            />
+            <img src="./Assets//images/nathan-dumlao-bw 1.jpg" alt="happy smiling children" class="hero-img" />
           </div>
         </div>
       </header>
@@ -56,28 +81,41 @@
           </div>
           <div class="video-content-container">
             <h2 class="section-heading">A Glimpse of SFRD</h2>
-            <div class="video-container"></div>
+            <div class="video-container">
+              <div class="container">
+                <video
+                  controls
+                  crossorigin
+                  playsinline
+                  poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"
+                >
+                  <source
+                    src="https://rr4---sn-cvh7knzs.c.drive.google.com/videoplayback?expire=1646767565&ei=jXUnYs6ANJeNrvIPgveR8As&ip=14.192.2.225&cp=QVRJWEhfVlVURlhPOjhDR09jSk9VVFJUVVhyVWJfWWJLN1NORlZoZzM5cE9XalJiS0pCV1N4M1c&id=22f7e73156d9a5a9&itag=18&source=webdrive&requiressl=yes&mh=If&mm=32&mn=sn-cvh7knzs&ms=su&mv=m&mvi=4&pl=24&ttl=transient&susc=dr&driveid=1lZ7i7jXgwNuRiWTtkQXkYh4_KC-XIH0k&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=58.049&lmt=1646751376931581&mt=1646752840&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRgIhANJrZ5J_eLyyWstDsXyxcieMg21fosPaYjfl1xq35Wa2AiEA2GZYDF4gyKmIaJFibPv9t4zg2_ngSY3Z_NequZA4uRY=&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAP_55MjMby7tkmGU3df2BTBsRW5Py3XIf0NpLBCNlUqxAiEAhTgWKpsCIEIBzo22buYaox9O0RWN94oHIPN0CGNoxpg=&cpn=O1WkmLWT_kURYlXQ&c=WEB_EMBEDDED_PLAYER&cver=1.20220306.00.00"
+                    type="video/mp4"
+                    size="720"
+                  />
+
+                  <!-- Fallback for browsers that don't support the <video> element -->
+                  <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
+                </video>
+              </div>
+              <!-- Plyr resources and browser polyfills are specified in the pen settings -->
+            </div>
           </div>
         </section>
         <section class="who-we-are-sec" id="who-we-are-sec">
           <div class="blur-background blur-div-aboutus"></div>
           <div class="aboutus-img-container">
             <div class="glass-aboutus"></div>
-            <img
-              class="about-us-img"
-              src="./Assets/images/unsplash_5urA9Pgh_JA.png"
-              alt="about us"
-            />
+            <img class="about-us-img" src="./Assets/images/unsplash_5urA9Pgh_JA.png" alt="about us" />
           </div>
           <div class="aboutus-text-content">
             <h2 class="hero-title aboutus-title">Who we are?</h2>
             <p class="hero-subtitle aboutus-desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean
-              congue ultrices quis interdum quis diam sed acvitae. Vitae posuere
-              enim est semper ut vitae. Eget hac nisl, sem ultrices in a congue.
-              Dui volutpat, ipsum habitant posuere rhoncus, a vestibulum. Lorem
-              ipsum dolor sit amet, ultrices quis interdum quis diam sed acvitae
-              ultrices quis interdum ultrices quis interdum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean congue ultrices quis interdum quis diam sed
+              acvitae. Vitae posuere enim est semper ut vitae. Eget hac nisl, sem ultrices in a congue. Dui volutpat,
+              ipsum habitant posuere rhoncus, a vestibulum. Lorem ipsum dolor sit amet, ultrices quis interdum quis diam
+              sed acvitae ultrices quis interdum ultrices quis interdum.
             </p>
             <button class="button">Know more</button>
           </div>
@@ -85,25 +123,18 @@
         <section class="our-mission">
           <div class="our-mission-container">
             <div class="our-mission-glass">
-              <img
-                src="./Assets//images/undraw_target_re_fi8j (1) 1.png"
-                alt=""
-              />
+              <img src="./Assets//images/undraw_target_re_fi8j (1) 1.png" alt="" />
             </div>
             <div class="our-mission-text-content">
               <h2>Our Mission Statment</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean
-                congue ultrices quis interdum quis diam sed acvitae. Vitae
-                posuere enim est semper ut vitae. Eget hac nisl, sem ultrices in
-                a congue. Dui volutpat, ipsum habitant posuere rhoncus. To know
-                more click here. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit.Aenean congue ultrices quis interdum quis diam
-                sed acvitae. Vitae posuere enim est semper ut vitae. Eget hac
-                nisl, sem ultrices in a congue. Dui volutpat, ipsum habitant
-                posuere rhoncus. To know more click here. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.Aenean congue ultrices quis
-                interdum pat, ipsum habitant posuere rhoncus. To know more
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean congue ultrices quis interdum quis diam
+                sed acvitae. Vitae posuere enim est semper ut vitae. Eget hac nisl, sem ultrices in a congue. Dui
+                volutpat, ipsum habitant posuere rhoncus. To know more click here. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.Aenean congue ultrices quis interdum quis diam sed acvitae. Vitae posuere
+                enim est semper ut vitae. Eget hac nisl, sem ultrices in a congue. Dui volutpat, ipsum habitant posuere
+                rhoncus. To know more click here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean congue
+                ultrices quis interdum pat, ipsum habitant posuere rhoncus. To know more
                 <span class="highlited-text">click here.</span>
               </p>
             </div>
@@ -121,9 +152,8 @@
             </div>
             <div>
               <p class="faq-desc">
-                As a creative agency we work with you to develop solutions to
-                address your brand needs. That includes various aspects of brand
-                planning and strategy, marketing and design.
+                As a creative agency we work with you to develop solutions to address your brand needs. That includes
+                various aspects of brand planning and strategy, marketing and design.
               </p>
             </div>
           </div>
@@ -131,17 +161,14 @@
             <div class="faq-top-part">
               <div class="faq-content">
                 <h3>02</h3>
-                <h2 class="faq-title">
-                  Lorem ipsum dolor sit amet consectetur?
-                </h2>
+                <h2 class="faq-title">Lorem ipsum dolor sit amet consectetur?</h2>
               </div>
               <div role="button" class="faq-expand-btn">+</div>
             </div>
             <div>
               <p class="faq-desc">
-                As a creative agency we work with you to develop solutions to
-                address your brand needs. That includes various aspects of brand
-                planning and strategy, marketing and design.
+                As a creative agency we work with you to develop solutions to address your brand needs. That includes
+                various aspects of brand planning and strategy, marketing and design.
               </p>
             </div>
           </div>
@@ -149,17 +176,14 @@
             <div class="faq-top-part">
               <div class="faq-content">
                 <h3>03</h3>
-                <h2 class="faq-title">
-                  Why do you have a monthly project cap?
-                </h2>
+                <h2 class="faq-title">Why do you have a monthly project cap?</h2>
               </div>
               <div role="button" class="faq-expand-btn">+</div>
             </div>
             <div>
               <p class="faq-desc">
-                As a creative agency we work with you to develop solutions to
-                address your brand needs. That includes various aspects of brand
-                planning and strategy, marketing and design.
+                As a creative agency we work with you to develop solutions to address your brand needs. That includes
+                various aspects of brand planning and strategy, marketing and design.
               </p>
             </div>
           </div>
@@ -167,17 +191,14 @@
             <div class="faq-top-part">
               <div class="faq-content">
                 <h3>04</h3>
-                <h2 class="faq-title">
-                  Are your rates competitive compared to others?
-                </h2>
+                <h2 class="faq-title">Are your rates competitive compared to others?</h2>
               </div>
               <div role="button" class="faq-expand-btn">+</div>
             </div>
             <div>
               <p class="faq-desc">
-                As a creative agency we work with you to develop solutions to
-                address your brand needs. That includes various aspects of brand
-                planning and strategy, marketing and design.
+                As a creative agency we work with you to develop solutions to address your brand needs. That includes
+                various aspects of brand planning and strategy, marketing and design.
               </p>
             </div>
           </div>
